@@ -42,7 +42,7 @@ namespace pruebaTecnica2
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseRouting();
+            app.UseRouting();            
 
             app.UseAuthorization();
 

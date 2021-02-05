@@ -1,0 +1,46 @@
+@model IEnumerable<pruebaTecnica2.Models.Terceros>
+
+@{
+       ViewData["Title"] = "Index";
+}
+<h2>Ver Terceros</h2>
+<p>
+    <a asp-action="Create">Crear uno Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nombres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.razonSocial)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem =>item.cedula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem =>item.nombres)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem =>item.apellidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem =>item.razonSocial)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

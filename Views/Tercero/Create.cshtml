@@ -1,0 +1,39 @@
+@model pruebaTecnica2.Models.Terceros
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h2>Crear Terceros</h2>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger">
+            </div>
+            <div class="form-group">
+                <label asp-for="cedula" class="control-label"></label>
+                <input asp-for="cedula" class="form-control">
+                <span asp-validation-for="cedula" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="nombres" class="control-label"></label>
+                <input asp-for="nombres" class="form-control">
+                <span asp-validation-for="nombres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="apellidos" class="control-label"></label>
+                <input asp-for="apellidos" class="form-control">
+                <span asp-validation-for="apellidos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Crear" class="btn btn-default">
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Regresar a la lista</a>
+</div>
+@section Scripts{
+    @{await Html.RenderPartialAsync("ValidationScriptsPartial");}
+}

@@ -15603,6 +15603,21 @@
   "RootNamespace": "pruebaTecnica2",
   "Documents": [
     {
+      "FilePath": "/home/david/Documents/pruebaTecnica2/Views/Tercero/Details.cshtml",
+      "TargetPath": "Views\\Tercero\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/david/Documents/pruebaTecnica2/Views/Tercero/Create.cshtml",
+      "TargetPath": "Views\\Tercero\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/david/Documents/pruebaTecnica2/Views/Tercero/Index.cshtml",
+      "TargetPath": "Views\\Tercero\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/david/Documents/pruebaTecnica2/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
