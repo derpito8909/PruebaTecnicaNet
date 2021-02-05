@@ -8,7 +8,10 @@ using System.Threading.Tasks;
 namespace pruebaTecnica2.Models
 {
     public class TercerosDataAccessLayer{
-        string connectionString = "Server=192.168.0.17;Database=almacen;User Id=sa;Password=D@vid@:c19@h20;";
+        string connectionString = "Data Source=192.168.0.17;" +
+  "Initial Catalog=almacen;" +
+  "User id=sa;" +
+  "Password=D@vid@:c19@:h20;";
 
         public IEnumerable<Terceros> ObtenerTodosTerceros()
         {
